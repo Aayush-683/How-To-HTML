@@ -7,4 +7,4 @@
 - Clean and simple UI with code examples (along with output)
 - Not updated since 2022
 
-# Checkout the website live @ https://aayush-683.github.io/How-To-HTML/
++ Checkout the website live @ https://aayush-683.github.io/How-To-HTML/

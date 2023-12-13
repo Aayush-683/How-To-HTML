@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="./3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column1">
+            <h1 id='animated' class="type-anim">HTML HACKS</h1>
+            <p>Select a topic from our list to expand your knowledge</p>
+            <div class="select">
+                <form>
+                    <select name="topics" class="search-bar" id="bar" onchange="searchResult()">
+                        <option value="" disabled selected>Click to select...</option>
+                        <option value="intro-html">Introduction to HTML</option>
+                        <option value="tags-html">HTML Tags</option>
+                        <option value="attr-html">HTML Attributes</option>
+                        <option value="form-html">HTML Forms</option>
+                        <option value="img-html">HTML Image Manipulation and Mapping</option>
+                        <option value="intro-css">Introduction to CSS</option>
+                        <option value="inn-ext-css">Inline, Internal and External CSS</option>
+                        <option value="back-css">CSS Background</option>
+                        <option value="bord-css">CSS Borders</option>
+                        <option value="anim-css">CSS Keyframes and Animations</option>
+                        <option value="intro-js">Introduction to JavaScript</option>
+                        <option value="ext-js">External JavaScript</option>
+                        <option value="obj-js">JavaScript Objects</option>
+                        <option value="func-js">JavaScript Functions</option>
+                    </select>
+                </form>
+                <span class="focus"></span>
+            </div>
+        </div>
+        <div class="column2">
+            <img src="./1.png" alt="banner">
+        </div>
+    </div>
+    <div class="column3">
+        <h1>
+            What is HTML?
+        </h1>
+        <p>
+            HTML stands for <strong>HyperText Markup Language</strong>. It is a standard markup
+            language for web
+            page creation. It allows the creation and structure of sections, paragraphs, and links using HTML
+            elements (the
+            building blocks of a web page) such as tags and attributes.&nbsp;
+        </p>
+        <p>HTML has a lot of use cases, namely:</p>
+        <ul>
+            <li><strong>Web development</strong>.
+                Developers use HTML code to design how a browser displays web page elements, such as text, hyperlinks,
+                and media files.&nbsp;</li>
+            <li><strong>Internet navigation</strong>.
+                Users can easily navigate and insert links between related pages and websites as HTML is heavily used to
+                embed hyperlinks.&nbsp;</li>
+            <li><strong>Web documentation</strong>.
+                HTML makes it possible to organize and format documents, similarly to Microsoft Word.</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>HTML HACKS | &copy; 2022 </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+
+        var reset_animation = setInterval(function () {
+            // console.log("Running Interval")
+            var el = document.getElementById('animated');
+            el.style = 'animation: none';
+            el.offsetHeight;
+            el.style = null;
+        }, 10 * 1000);
+
+        function searchResult() {
+            var search = document.getElementById("bar").value;
+            let doc = "C:/Users/bkgam/Desktop/%C2%A0%C2%A0/SICSR/HTML/test/pages"
+            window.location.href = `${doc}/${search}.html`;
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- TODO -->
+<!-- 1. Add a search bar CSS [100%] -->
+<!-- 2. Finish search bar JS [100%] -->
+<!-- 3. Add Team Page [100%] -->
+<!-- 4. Add Contact Page [100%] -->
+<!-- 5. Add a proper footer [100%] -->
+<!-- 6. Work on search bar options [100%] -->
+<!-- 7. Add a page for each topic [100%] -->
+<!-- 8. Get some coffee [90%] -->

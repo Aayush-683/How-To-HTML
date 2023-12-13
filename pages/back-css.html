@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>CSS Background</h1>
+            <p>CSS background
+                property is used to define the background effects on element. There are 5 CSS background properties that
+                affects the
+                HTML elements:
+            </p>
+            <ol>
+                <li>background-color</li>
+                <br>
+                <li>background-image</li>
+                <br>
+                <li>background-repeat</li>
+                <br>
+                <li>background-attachment</li>
+                <br>
+                <li>background-position</li>
+            </ol>
+            <h1>1) CSS background-color</h1>
+            <p>The
+                background-color property is used to specify the background color of the element.</p>
+            <h1>Example:</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;html&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2,p{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #b0d4de;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;My first CSS page.&lt;/h2&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Hello Javatpoint. This is an example of CSS background-color.&lt;/p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;/html&gt;
+                </code>
+                <h2>Output:</h2>
+                <h2 class="normal" style=" background-color: #b0d4de;">My first CSS page.</h2>
+                <br>
+                <p class="normal" style=" background-color: #b0d4de;">Hello Javatpoint. This is an example of CSS
+                    background-color.</p>
+            </div>
+            <div>
+                <h1>CSS background-attachment</h1>
+                <p>The
+                    background-attachment property is used to specify if the background image is fixed or scroll with
+                    the rest of the page in browser window.
+                    If you set
+                    fixed the background image then the image will not move during scrolling in the browser. Let?s take
+                    an example with fixed
+                    background
+                    image.</p>
+                <h1>Syntax</h1>
+                <div class="codeblock">
+                    background: white url('bbb.gif');
+                    <br>
+                    background-repeat: no-repeat;
+                    <br>
+                    background-attachment: fixed;
+                </div>
+                <br>
+                <h1>CSS background-image</h1>
+                <p>The
+                    background-image property is used to set an image as a background of an element. By default the
+                    image covers the entire element. You
+                    can set
+                    the background image for a page like this.</p>
+                <h1>Example</h1>
+                <div class="codeblock">
+                    <h2>Input:</h2>
+                    <code>
+                        &lt;!DOCTYPE html&gt;
+                        <br>
+                        &nbsp;&lt;html&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;head&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&lt;style&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;body {
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image: url("random.jpg");
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-size: contain;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: auto;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;h1 {
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-shadow: 3px 3px 3px rgba(128, 102, 102, 0.418);
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}
+                        &nbsp;&nbsp;&nbsp;&lt;/style&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;/head&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello HTML HACKS&lt;/h1&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                        <br>
+                        &nbsp;&lt;/html&gt;
+                    </code>
+                    <h2>Output:</h2>
+                    <div
+                        style="background-image: url('../random.jpg'); background-size: contain; height: 100px; width: auto;">
+                        <h1 style="text-align: center; text-shadow: 3px 3px 3px rgba(128, 102, 102, 0.418); color: red;"
+                            class="normal">Hello HTML HACKS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>&copy; HTML HACKS | 2021 - 2022</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

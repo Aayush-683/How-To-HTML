@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>JavaScript Objects</h1>
+            <p>A javaScript object is an entity having state and behavior (properties and method). For example: car,
+                pen, bike, chair, glass, keyboard, monitor etc. JavaScript is an object-based language. Everything is an
+                object in JavaScript. JavaScript is template based not class based. Here, we don't create class to get
+                the object. But, we direct create objects.</p>
+            <h1>Creating Objects in JavaScript</h1>
+            <ol>
+                <li>By object literal</li>
+                <li>By creating instance of Object directly (using new keyword)</li>
+                <li>By using an object constructor (using new keyword)</li>
+            </ol>
+            <h1>1) JavaScript Object by object literal</h1>
+            <h1>Example</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    &nbsp;&nbsp;var emp={id:102,name:"Shyam Kumar",salary:40000}
+                    <br>
+                    &nbsp;&nbsp;document.write(emp.id+" "+emp.name+" "+emp.salary);
+                    <br>
+                    &lt;/script&gt;
+                </code>
+                <h2>Output:</h2>
+                <div>
+                    <script>
+                        var emp = { id: 102, name: "Shyam Kumar", salary: 40000 }
+                        document.write(emp.id + " " + emp.name + " " + emp.salary);  
+                    </script>
+                </div>
+            </div>
+            <h1>2) By creating instance of Object</h1>
+            <h1>Example</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    &nbsp;&nbsp;var emp=new Object();
+                    <br>
+                    &nbsp;&nbsp;emp.id=101;
+                    <br>
+                    &nbsp;&nbsp;emp.name="Ravi Malik";
+                    <br>
+                    &nbsp;&nbsp;emp.salary=50000;
+                    <br>
+                    &nbsp;&nbsp;document.write(emp.id+" "+emp.name+" "+emp.salary);
+                    <br>
+                    &lt;/script&gt;
+                </code>
+                <h2>Output:</h2>
+                <div>
+                    <script>
+                        var emp = new Object();
+                        emp.id = 101;
+                        emp.name = "Ravi Malik";
+                        emp.salary = 50000;
+                        document.write(emp.id + " " + emp.name + " " + emp.salary);  
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>HTML HACKS | &copy; 2022 </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

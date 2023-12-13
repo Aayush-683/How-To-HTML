@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>JavaScript Functions</h1>
+            <p>JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse
+                the code.</p>
+            <br>
+            <h2>Advantage of JavaScript function</h2>
+            <p>There are mainly two advantages of JavaScript functions.</p>
+            <ol>
+                <li><b> code reusability:</b> We can call a function several times so it save coding. </li>
+                <li><b> less coding:</b> It makes our program compact. We don’t need to write many lines of code each
+                    time to
+                    perform a common task.</li>
+            </ol>
+            <h1>JavaScript Function</h1>
+            <div class="codeblock">
+                <h2>Syntax</h2>
+                <code>
+                    function functionName([arg1, arg2, ...argN]){
+                        <br>  
+                        &nbsp;&nbsp;//code to be executed
+                        <br>  
+                    }  
+                </code>
+            </div>
+            <h1>Example 1</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    &nbsp;&nbsp;function msg(){
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;alert("hello! this is message");
+                    <br>
+                    &nbsp;&nbsp;}
+                    <br>
+                    &lt;/script&gt;
+                    <br>
+                    &lt;input type="button" onclick="msg()" value="call function"/&gt;
+                </code>
+                <h2>Output:</h2>
+                <input type="button" onclick="alert('hello! this is message')" value="call function">
+            </div>
+            <h1>Example 2</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                &lt;script&gt;  
+                <br>
+                &nbsp;&nbsp;function getInfo(){  
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return "hello HTML HACKS! How r u?";
+                <br>  
+                &nbsp;&nbsp;}  
+                <br>
+                &lt;/script&gt;  
+                <br>
+                &lt;input type="button" onclick="alert(getInfo())" value="call function"/&gt;
+                </code>
+                <h2>Output:</h2>
+                <input type="button" onclick="alert('hello HTML HACKS! How r u?')" value="call function">
+            </div>
+            <h1>JavaScript Function Object</h1>
+            <p>
+                In JavaScript, the purpose of Function constructor is to create a new Function object. It executes the
+                code globally. However, if we call the constructor directly, a function is created dynamically but in an
+                unsecured way.
+            </p>
+            <h1>JavaScript Function Object</h1>
+            <div class="codeblock">
+                <h2>Syntax</h2>
+                <code>
+                    new Function ([arg1[, arg2[, ....argn]],] functionBody) 
+                </code>
+            </div>
+            <h1>Example</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;script&gt;
+                    <br>
+                    &nbsp;&nbsp;var add = new Function([num1,num2], return num1+num2);
+                    <br>
+                    &nbsp;&nbsp;alert(add(2,5));
+                    <br>
+                    &lt;/script&gt;
+                    <br>
+                    &lt;input type="button" onclick="alert(add(2,5))" value="call function"/&gt;
+                </code>
+                <h2>Output:</h2>
+                <input type="button" onclick="alert(add(2,5))" value="call function">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>HTML HACKS | &copy; 2022 </p>
+        </div>
+    </footer>
+
+    <script>
+        function add(n,m) {
+            return n+m
+        }
+    </script>
+
+</body>
+
+</html>

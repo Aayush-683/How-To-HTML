@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>CSS Borders</h1>
+            <p>The CSS border is a shorthand property used to set the border on an element. The CSS border properties
+                are use to specify the style, color and size of the border of an element. The CSS border properties are
+                given below
+            <ul>
+                <li>border-style</li>
+                <li>border-color</li>
+                <li>border-width</li>
+                <li>border-radius</li>
+            </ul>
+            </p>
+            <h1>Example</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;html&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.none {border-style: none;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.dotted {border-style: dotted;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.dashed {border-style: dashed;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.solid {border-style: solid;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.double {border-style: double;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.groove {border-style: groove;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.ridge {border-style: ridge;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.inset {border-style: inset;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.outset {border-style: outset;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.hidden {border-style: hidden;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="none">No border.&lt;/p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="dotted">A dotted border.&lt;/p&gt;          
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="dashed">A dashed border.&lt;/p&gt; 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="solid">A solid border.&lt;/p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="double">A double border.&lt;/p&gt; 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="groove">A groove border.&lt;/p&gt; 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="ridge">A ridge border.&lt;/p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="inset">An inset border.&lt;/p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="outset">An outset border.&lt;/p&gt;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="hidden">A hidden border.&lt;/p&gt; 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;/html&gt;
+                </code>
+                <h2>Output:</h2>
+                <div>
+                    <style>
+                        p.none {
+                            border-style: none;
+                        }
+
+                        p.dotted {
+                            border-style: dotted;
+                        }
+
+                        p.dashed {
+                            border-style: dashed;
+                        }
+
+                        p.solid {
+                            border-style: solid;
+                        }
+
+                        p.double {
+                            border-style: double;
+                        }
+
+                        p.groove {
+                            border-style: groove;
+                        }
+
+                        p.ridge {
+                            border-style: ridge;
+                        }
+
+                        p.inset {
+                            border-style: inset;
+                        }
+
+                        p.outset {
+                            border-style: outset;
+                        }
+
+                        p.hidden {
+                            border-style: hidden;
+                        }
+                    </style>
+
+                    <body>
+                        <p class="none">No border.</p>
+                        <p class="dotted">A dotted border.</p>
+                        <p class="dashed">A dashed border.</p>
+                        <p class="solid">A solid border.</p>
+                        <p class="double">A double border.</p>
+                        <p class="groove">A groove border.</p>
+                        <p class="ridge">A ridge border.</p>
+                        <p class="inset">An inset border.</p>
+                        <p class="outset">An outset border.</p>
+                        <p class="hidden">A hidden border.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>HTML HACKS | &copy; 2022 </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

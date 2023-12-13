@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div class="logo">
+            <a href="C:\\Users\\bkgam\\Desktop\\ \\SICSR\\HTML\\test\\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\\Users\\bkgam\\Desktop\\ \\SICSR\\HTML\\test\\index.html">Home</a></li>
+                <li><a href="C:\\Users\\bkgam\\Desktop\\ \\SICSR\\HTML\\test\\team.html">Team</a></li>
+                <li><a href="C:\\Users\\bkgam\\Desktop\\ \\SICSR\\HTML\\test\\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>Inline CSS</h1>
+            <br>
+            <p>We can apply CSS in a single element by inline CSS technique.
+                <br><br>
+                The inline CSS is also a method to insert style sheets in HTML document. This method mitigates some
+                advantages of style sheets so it is advised to use this method sparingly.
+                <br><br>
+                If you want to use inline CSS, you should use the style attribute to the relevant tag
+            </p>
+            <br><br>
+            <h1>Example:</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;h3 style="color:red;margin-left:40px;"&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Inline CSS is applied on this heading.
+                    <br>
+                    &lt;/h3&gt;
+                    <br>
+                    &lt;p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; paragraph is not affected.
+                    <br>
+                    &lt;/p&gt;
+                </code>
+                <h2>Output: </h2>
+                <h3 style="color:red;margin-left:40px;">Inline CSS is applied on this heading.</h3>
+                <p class="normal">This paragraph is not affected.</p>
+            </div>
+            <br><br><br>
+            <div>
+                <h1>Internal CSS</h1>
+                <br>
+                <p>The internal style sheet is used to add a unique style for a single document. It is defined in
+
+                    <head> section of the HTML page inside the &lt;style&gt; tag.
+                </p>
+            </div>
+            <h1>Example:</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;!DOCTYPE html>
+                    <br>
+                    &nbsp;&nbsp;&lt;html>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: linen;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:blue:
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 {
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-left: 20px;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2>The internal style sheet is applied on this
+                    heading.&lt;/h2>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p>This paragraph will be blue.&lt;/p>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body>
+                    <br>
+                    &nbsp;&nbsp;&lt;/html>
+                </code>
+                <h2>Output:</h2>
+                <div style="background-color: linen">
+                    <h2 style="color: red; margin-left: 20px;">The internal style sheet is applied on this heading.</h2>
+                    <p style="color: blue;">This paragraph will be blue.</p>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <h1>External CSS</h1>
+                <p>The external style sheet is generally used when you want to make changes on multiple pages. It is
+                    ideal for this condition because it facilitates you to change the look of the entire web site by
+                    changing just one file.
+
+                    It uses the &lt;link&gt; tag on every pages and the &lt;link&gt; tag should be put inside the head
+                    section.</p>
+                <h1>Example:</h1>
+                <div class="codeblock">
+                    <h2>Input:</h2>
+                    <code>
+                        &lt;head>
+                        <br>
+                        &nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="mystyle.css">
+                        <br>
+                        &lt;/head>
+                        <br>
+                        &lt;body>
+                        <br>
+                        &nbsp;&nbsp;&lt;h1>this is external css&lt;/h1>
+                        <br>
+                        &lt;/body>
+                    </code>
+                    <h2>Output:</h2>
+                    <h1 class="type-anim">this is external css</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>HTML HACKS | &copy; 2022 </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>HTML Image Mapping</h1>
+            <p>HTML &lt;map> tag is used with &lt;area&gt; tag to define a client-side image map. An image map is
+                consist of an image with clickable areas, where you can click on the image, and it will open to new or
+                the provided destination. The &lt;map> tag can consist of more than one &lt;area&gt; elements which
+                define the coordinates and type of the area. With the help of &lt;map&gt; tag, you can easily link any
+                part of the image to other documents, without dividing the image.</p>
+            <h1>Example:</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;head&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;HTML map tag&lt;/title&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body{
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-left:
+                    250px;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;/head&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;body&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2>Example of HTML Map tag&gt;/h2&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../random.jpg" usemap="#web"&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;map name="web"&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;area autofocus shape="rect"
+                    coords="66,117,131,168" href="website_url"&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/map&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;/body&gt;
+                    <br>
+                    &lt;/html&gt;
+                </code>
+                <h2>Output:</h2>
+                <img src="../random.jpg" usemap="#web">
+                <map name="web">
+                    <area autofocus shape="rect" coords="66,117,131,168"
+                        href="C:\\Users\\bkgam\\Desktop\\ \\SICSR\\HTML\\test\\index.html">
+                </map>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>&copy; HTML HACKS | 2021 - 2022</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

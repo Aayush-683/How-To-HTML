@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+    <style>
+        .anim {
+            width: auto;
+            height: 200px;
+            animation: demo 5s ease-in infinite, trans 5s ease-in-out infinite;
+            border-radius: 40px;
+            margin-left: 3%;
+            margin-top: 7.5%;
+        }
+
+        .anim p {
+            word-wrap: nowrap
+        }
+
+        @keyframes demo {
+            0% {
+                background: red;
+                width: 100px;
+                height: 100px;
+            }
+
+            50% {
+                background: yellow;
+                width: 200px;
+                height: 200px;
+            }
+
+            97% {
+                background: lime;
+                width: 100px;
+                height: 100px;
+            }
+
+            100% {
+                background: red;
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+
+        @keyframes trans {
+            0% {
+                transform: translate(0px) scale(1.4) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(250px) scale(1.2) rotate(45deg);
+            }
+
+            100% {
+                transform: translate(0px) scale(1.4) rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>CSS @keyframes Rule</h1>
+            <p>
+                The CSS @keyframe specifies the animation rule that defines the CSS properties for the elements at each
+                state with a timeline. We can create complex animation properties by using the @keyframe. An animation
+                is created with the changeable CSS styles that can be repeated indefinitely or a finite number of times.
+                A simple animation can just have two keyframes, while the complex animation has several keyframes.
+            </p>
+            <h1>Syntax</h1>
+            <div class="codeblock">
+                <code>
+                    @keyframes animationname {keyframes-selector {css-styles;}}
+                </code>
+            </div>
+            <h1>Example</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;!DOCTYPE html&gt;  
+                    <br>
+                    &nbsp;&nbsp;&lt;html&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;   
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.anim  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:auto;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:200px;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;animation:demo 5s ease-in infinite, trans 5s ease-in-out infinite;                                             
+                    <br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius:40px;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@keyframes demo  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0% {background:red; width:100px; height:100px;}   
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50% {background:yellow; width:200px; height:200px;}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97% {background:lime; width:100px; height:100px;}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100% {background:red; width:100px; height:100px;}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@keyframes trans  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0% {transform:translate(0px) scale(1.4) rotate(80deg);}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50% {transform:translate(250px) scale(1.2) rotate(45deg);}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100% {translate(0px) scale(1.4) rotate(90deg);}  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  
+                    <br>  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;  
+                    <br>
+                    &nbsp;&nbsp;&lt;/head&gt;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;  
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;After the completion of the Animation, the element retracts to its original State &lt;/p&gt; 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="anim"&gt;&lt;/div&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                    <br>  
+                    &nbsp;&nbsp;&lt;/html&gt;
+                    <br>
+                </code>
+                <h2>Output:</h2>
+                <div style="width: auto; height: 375px;">
+                    <p class="normal">After the completion of the Animation, the element retracts to its original
+                        State</p>
+                    <div class="anim"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>&copy; HTML HACKS | 2021 - 2022</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

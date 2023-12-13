@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <title>HTML HACKS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav>
+        <div>
+            <a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">
+                <img style="margin-top: -30px; border-radius: 3px;" src="../3.png" alt="Site Logo">
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\index.html">Home</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\team.html">Team</a></li>
+                <li><a href="C:\Users\bkgam\Desktop\ \SICSR\HTML\test\contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Here -->
+    <div class="row">
+        <div class="column">
+            <!-- Write here -->
+            <h1>External JavaScript</h1>
+            <p>We can create external JavaScript file and embed it in many html page.</p>
+
+            <p>It provides <b>code re usability</b> because single JavaScript file can be used in several html pages.
+            </p>
+
+            <p>An external JavaScript file must be saved by .js extension. It is recommended to embed all JavaScript
+                files into a single file. It increases the speed of the webpage.</p>
+
+            <p>Let's create an external JavaScript file that prints 'Hello HTML HACKS' in an alert dialog box.</p>
+            <h1>Message.js</h1>
+            <div class="codeblock">
+                <code>
+                    function msg(){
+                    <br>
+                    &nbsp;&nbsp;alert("Hello HTML HACKS");
+                    <br>
+                    }
+                </code>
+            </div>
+            <p>Let's include the JavaScript file into html
+                page. It calls the JavaScript function
+                on button click.</p>
+            <h1>Index.html</h1>
+            <div class="codeblock">
+                <h2>Input:</h2>
+                <code>
+                    &lt;html&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;head&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;script type="text/javascript" src="message.js"&gt; &lt;/script&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;/head&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;body&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Welcome to JavaScript&lt;/p&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;form&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="button" value="click" onclick="msg()"/&gt;
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;/body&gt;
+                    <br>
+                    &lt;/html&gt;
+                </code>
+                <h2>Output:</h2>
+                <form>
+                    <input type="button" value="click" onclick="alert('Hello HTML HACKS')">
+                </form>
+            </div>
+            <h1>Advantages of External JavaScript</h1>
+            <p>There will be following benefits if a user creates an external javascript:</p>
+            <ol type="1">
+                <li>It helps in the reusability of code in more than one HTML file.</li>
+                <li>It allows easy code readability.</li>
+                <li>It is time-efficient as web browsers cache the external js files, which further reduces the page
+                    loading time.</li>
+                <li>It enables both web designers and coders to work with html and js files parallelly and separately,
+                    i.e., without facing any code conflictions.</li>
+                <li>The length of the code reduces as only we need to specify the location of the js file.</li>
+            </ol>
+            <h1>Disadvantages of External JavaScript</h1>
+            <p>There are the following disadvantages of external files:</p>
+            <ol type="1">
+                <li>The stealer may download the coder's code using the url of the js file.</li>
+                <li>If two js files are dependent on one another, then a failure in one file may affect the execution of
+                    the other dependent file.</li>
+                <li>The web browser needs to make an additional http request to get the js code.</li>
+                <li>A tiny to a large change in the js code may cause unexpected results in all its dependent files.
+                </li>
+                <li>We need to check each file that depends on the commonly created external javascript file.</li>
+                <li>If it is a few lines of code, then better to implement the internal javascript code.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>HTML HACKS | &copy; 2022 </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
